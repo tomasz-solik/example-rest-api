@@ -1,0 +1,3 @@
+parameters:
+  api_jsonplaceholder:
+    url: '%env(resolve:API_JSONPLACEHOLDER_URL)%'
