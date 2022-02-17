@@ -17,7 +17,6 @@ class PostController extends AbstractController
      */
     public function posts(PostService $postService): Response
     {
-        // http://ak-rest-api.local.com/api/posts
         return new JsonResponse($postService->getAllPosts());
     }
 
@@ -29,7 +28,6 @@ class PostController extends AbstractController
      */
     public function post(int $postId, PostService $postService): Response
     {
-        http://ak-rest-api.local.com/api/posts/1
         return new JsonResponse($postService->getPost($postId));
     }
 }
